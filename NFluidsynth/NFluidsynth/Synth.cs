@@ -478,7 +478,9 @@ namespace NFluidsynth
 		public string LastError {
 			get {
 				var ptr = LibFluidsynth.Synth.fluid_synth_error (Handle);
-				return Marshal.PtrToStringAuto (ptr);
+			    return string.Empty;
+			    // TODO: PtrToStringAuto is not apart of PCL. So we'll have to figure something out later...
+			    //return Marshal.PtrToStringAuto (ptr);
 			}
 		}
 

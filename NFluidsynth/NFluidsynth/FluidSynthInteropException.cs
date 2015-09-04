@@ -13,13 +13,6 @@ namespace NFluidsynth
 		public FluidSynthInteropException (string message) : base (message)
 		{
 		}
-		
-
-#if !PORTABLE
-		public FluidSynthInteropException (SerializationInfo info, StreamingContext context) : base (info, context)
-		{
-		}
-#endif
 
 		public FluidSynthInteropException (string message, Exception innerException) : base (message, innerException)
 		{
